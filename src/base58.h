@@ -276,8 +276,8 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 40,  // HadokenCoin: address begin with 'M'
-        SCRIPT_ADDRESS = 5, 
+        PUBKEY_ADDRESS = 51,  // MintCoin: address begin with 'M'
+        SCRIPT_ADDRESS = 8, 
         PUBKEY_ADDRESS_TEST = 111,
         SCRIPT_ADDRESS_TEST = 196,
     };

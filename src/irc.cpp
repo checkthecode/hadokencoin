@@ -302,16 +302,16 @@ void ThreadIRCSeed2(void* parg)
         }
 
         if (fTestNet) {
-            Send(hSocket, "JOIN #HadokenCoinTEST2\r");
-            Send(hSocket, "WHO #HadokenCoinTEST2\r");
+            Send(hSocket, "JOIN #MintCoinTEST2\r");
+            Send(hSocket, "WHO #MintCoinTEST2\r");
         } else {
-            // randomly join #HadokenCoin00-#HadokenCoin05
+            // randomly join #MintCoin00-#MintCoin05
             // int channel_number = GetRandInt(5);
 
             // Channel number is always 0 for initial release
             int channel_number = 0;
-            Send(hSocket, strprintf("JOIN #HadokenCoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #HadokenCoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("JOIN #MintCoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #MintCoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
